@@ -1,0 +1,50 @@
+window {
+	border-radius: 1em;
+	overflow: hidden;
+	border: none;
+}
+
+
+#outer-box {
+	background-color: #314158;
+	padding: 1em;
+	border-radius: 1em;
+	overflow: hidden;
+}
+
+#input {
+	background-color: #62748e;
+	color: #53eafd;
+	font-weight: 700;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border: none;
+	outline: none;
+	border-radius: 1em;
+}
+
+#input::placeholder {
+	color: #bada55;
+	font-weight: 700;
+}
+
+#entry:selected {
+	background-color: #53eafd;
+	background: linear-gradient(90deg, #53eafd, #62748e);
+	outline: none;
+	border: none;
+	border-radius: 1em;
+}
+
+#text:selected {
+	color: #314158;
+	font-weight: 700;
+}
+
+#text {
+	color: #dddddd;
+}
+
+#img {
+	margin-right: 1em;
+}

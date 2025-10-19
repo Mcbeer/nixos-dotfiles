@@ -1,0 +1,44 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+	background-color: transparent;
+	color: white;
+}
+
+#workspaces {
+	background-color: #314158;
+	padding: 0.5em;
+	border-radius: 1em;
+}
+
+#workspaces button {
+	background: #62748e;
+	color: transparent;
+	margin: 0 5px;
+	border-radius: 1em;
+	transition: padding 250ms ease-in-out;
+	padding: 0.25em 0.5em;
+}
+
+#workspaces button.active {
+	background-color: #53eafd;
+	background: linear-gradient(90deg, #53eafd, #62748e);
+	border-radius: 1em;
+	padding: 0.25em 1em;
+}
+
+#clock {
+	color: #dddddd;
+	font-size: 16px;
+	margin-right: 1em;
+	background-color: #314158;
+	padding: 0.5em;
+	margin: 0 5px;
+	border-radius: 1em;
+}

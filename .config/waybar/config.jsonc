@@ -1,0 +1,26 @@
+{
+    "layer": "top",
+
+    // Modules left
+    "modules-left": [],
+
+    // Modules center
+    "modules-center": ["hyprland/workspaces"],
+
+    // Modules right side
+    "modules-right": ["clock"],
+
+    // Module configurations
+    // Clock
+    "clock": {
+	"tooltip": false,
+	"format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+
+    // Hyprland Workspaces
+    "hyprland/workspaces": {
+	"persistent-workspaces": {
+		"*": 5
+	}
+    }
+}

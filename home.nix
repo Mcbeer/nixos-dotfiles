@@ -15,4 +15,9 @@
         		fi
       		'';
 	};
+	xdg.configFile = {
+		"hypr".source = ./.config/hypr;
+    		"waybar".source = ./.config/waybar;
+		"wofi".source = ./.config/wofi;
+	};
 }

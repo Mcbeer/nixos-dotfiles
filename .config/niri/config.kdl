@@ -31,7 +31,7 @@ binds {
     Mod+Shift+J { move-window-down; }
     Mod+Shift+K { move-window-up; }
 
-    Mod+Tab { switch-workspace-overview; }
+    Mod+Tab { toggle-overview; }
     
     Mod+Q { close-window; }
     Mod+F { fullscreen-window; }

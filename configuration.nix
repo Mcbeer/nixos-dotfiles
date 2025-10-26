@@ -29,8 +29,8 @@
 	xwayland.enable = true;
   };
 
-  services.displayManager.defaultSession = "hyprland";
-  
+  programs.niri.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   hardware.nvidia.open = false;
   services.xserver.videoDrivers = [ "nvidia" ];

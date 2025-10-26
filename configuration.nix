@@ -68,6 +68,10 @@
     xwayland-satellite
   ];
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
+  ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.stateVersion = "25.05";

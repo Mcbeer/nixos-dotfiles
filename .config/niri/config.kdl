@@ -13,6 +13,7 @@ input {
 }
 
 spawn-at-startup "waybar"
+spawn-at-startup "xwayland-satellite"
 
 layout {
     gaps 8

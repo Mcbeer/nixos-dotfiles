@@ -1,36 +1,25 @@
-// Basic Niri configuration
-
 input {
     keyboard {
         xkb {
-            // Danish keyboard layout
             layout "dk"
-            
-            // Map Right Super to AltGr
             options "lv3:rwin_switch"
         }
     }
     
-    // Touchpad settings (if you have a laptop)
     touchpad {
         tap
         natural-scroll
     }
 }
 
-spawn-at-startup {
-    command ["waybar"]
-}
+spawn-at-startup "waybar"
 
-// Window layout settings
 layout {
     gaps 8
     center-focused-column "never"
 }
 
-// Basic keybindings
 binds {
-    // Window management
     Mod+H { focus-column-left; }
     Mod+L { focus-column-right; }
     Mod+J { focus-window-down; }
@@ -41,13 +30,9 @@ binds {
     Mod+Shift+J { move-window-down; }
     Mod+Shift+K { move-window-up; }
     
-    // Window closing
     Mod+Q { close-window; }
-    
-    // Fullscreen
     Mod+F { fullscreen-window; }
     
-    // Workspaces
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
     Mod+3 { focus-workspace 3; }
@@ -60,21 +45,11 @@ binds {
     Mod+Shift+4 { move-column-to-workspace 4; }
     Mod+Shift+5 { move-column-to-workspace 5; }
     
-    // Application launcher
     Mod+D { spawn "wofi" "--show" "drun"; }
-    
-    // Terminal
     Mod+Return { spawn "kitty"; }
-    
-    // Exit Niri
     Mod+Shift+E { quit; }
 }
 
-// Mod key is Super (Windows key)
-// The left Super key will be your main modifier
-// The right Super key will act as AltGr for special Danish characters
-
-// Window rules (optional)
 window-rule {
     geometry-corner-radius 8
     clip-to-geometry true

@@ -2,7 +2,7 @@ input {
     keyboard {
         xkb {
             layout "dk"
-            options "lv3:rwin_switch"
+            options "lv3:lalt_switch"
         }
     }
     

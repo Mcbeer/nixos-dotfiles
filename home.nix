@@ -20,7 +20,7 @@
 				read -p "Choice (1-2): " choice
 				case $choice in
 					1) exec Hyprland ;;
-					2) exec niri-session ;;
+					2) exec niri --session ;;
 					*) echo "Invalid choice" ;;
 				esac
 			fi

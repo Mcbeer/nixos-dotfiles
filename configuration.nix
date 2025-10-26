@@ -31,6 +31,18 @@
 
   programs.niri.enable = true;
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+    config.common.default = "*";
+  };
+
+  # Polkit for authentication dialogs
+  security.polkit.enable = true;
+  
+  # XWayland support for Niri
+  programs.xwayland-satellite.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   hardware.nvidia.open = false;
   services.xserver.videoDrivers = [ "nvidia" ];

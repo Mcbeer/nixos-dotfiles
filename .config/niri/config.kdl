@@ -45,7 +45,7 @@ binds {
     Mod+Shift+4 { move-column-to-workspace 4; }
     Mod+Shift+5 { move-column-to-workspace 5; }
     
-    Mod+D { spawn "wofi" "--show" "drun"; }
+    Mod+Space { spawn "wofi" "--show" "drun"; }
     Mod+Return { spawn "kitty"; }
     Mod+Shift+E { quit; }
 }

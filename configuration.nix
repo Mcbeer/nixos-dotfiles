@@ -40,9 +40,6 @@
   # Polkit for authentication dialogs
   security.polkit.enable = true;
   
-  # XWayland support for Niri
-  programs.xwayland-satellite.enable = true;
-
   nixpkgs.config.allowUnfree = true;
   hardware.nvidia.open = false;
   services.xserver.videoDrivers = [ "nvidia" ];
@@ -68,6 +65,7 @@
     xfce.thunar
     pkgs.umu-launcher
     pkgs.wowup-cf
+    xwayland-satellite
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

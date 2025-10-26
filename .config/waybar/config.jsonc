@@ -1,26 +1,31 @@
 {
     "layer": "top",
-
-    // Modules left
-    "modules-left": [],
-
-    // Modules center
-    "modules-center": ["hyprland/workspaces"],
-
-    // Modules right side
-    "modules-right": ["clock"],
-
-    // Module configurations
-    // Clock
-    "clock": {
-	"tooltip": false,
-	"format-alt": "{:%a, %d. %b  %H:%M}"
+    "position": "top",
+    "height": 30,
+    
+    "modules-left": ["wlr/taskbar"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory"],
+    
+    "wlr/taskbar": {
+        "format": "{title}",
+        "icon-size": 0,
+        "tooltip": false,
+        "on-click": "activate"
     },
-
-    // Hyprland Workspaces
-    "hyprland/workspaces": {
-	"persistent-workspaces": {
-		"*": 5
-	}
+    
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%Y-%m-%d %H:%M:%S}"
+    },
+    
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "interval": 2
+    },
+    
+    "memory": {
+        "format": "MEM: {percentage}%",
+        "interval": 2
     }
 }

@@ -1,44 +1,51 @@
 * {
+    font-family: monospace;
+    font-size: 13px;
     border: none;
     border-radius: 0;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    min-height: 0;
+    margin: 0;
+    padding: 0;
 }
 
 window#waybar {
-	background-color: transparent;
-	color: white;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
 }
 
-#workspaces {
-	background-color: #314158;
-	padding: 0.5em;
-	border-radius: 1em;
+#workspaces,
+#taskbar,
+#clock,
+#cpu,
+#memory {
+    padding: 0 10px;
+    margin: 0;
 }
 
-#workspaces button {
-	background: #62748e;
-	color: transparent;
-	margin: 0 5px;
-	border-radius: 1em;
-	transition: padding 250ms ease-in-out;
-	padding: 0.25em 0.5em;
+#taskbar button {
+    background-color: transparent;
+    color: #cdd6f4;
+    padding: 0 5px;
 }
 
-#workspaces button.active {
-	background-color: #53eafd;
-	background: linear-gradient(90deg, #53eafd, #62748e);
-	border-radius: 1em;
-	padding: 0.25em 1em;
+#taskbar button.active {
+    color: #89b4fa;
 }
 
 #clock {
-	color: #dddddd;
-	font-size: 16px;
-	margin-right: 1em;
-	background-color: #314158;
-	padding: 0.5em;
-	margin: 0 5px;
-	border-radius: 1em;
+    color: #cdd6f4;
+    font-weight: bold;
+}
+
+#cpu {
+    color: #a6e3a1;
+}
+
+#memory {
+    color: #89dceb;
+}
+
+#taskbar button:hover,
+#cpu:hover,
+#memory:hover {
+    background-color: #313244;
 }

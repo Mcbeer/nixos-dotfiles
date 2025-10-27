@@ -57,6 +57,7 @@
     waybar
     git
     hyprpaper
+    swww
     wofi
     lutris
     wine

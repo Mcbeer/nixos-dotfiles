@@ -12,8 +12,8 @@ input {
     }
 }
 
-spawn-at-startup "waybar"
-spawn-at-startup "xwayland-satellite"
+spawn-at-startup "/run/current-system/sw/bin/waybar"
+spawn-at-startup "/run/current-system/sw/bin/xwayland-satellite"
 
 layout {
     gaps 8

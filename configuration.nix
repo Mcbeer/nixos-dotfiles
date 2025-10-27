@@ -66,6 +66,7 @@
     pkgs.umu-launcher
     pkgs.wowup-cf
     xwayland-satellite
+    nodejs_24
   ];
 
   fonts.packages = with pkgs; [

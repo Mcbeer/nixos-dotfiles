@@ -12,6 +12,8 @@ input {
     }
 }
 
+spawn-at-startup "waybar"
+
 
 
 layout {

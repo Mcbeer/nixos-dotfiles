@@ -33,33 +33,4 @@
 		"wofi".source = ./.config/wofi;
 	};
 
-	systemd.user.services.waybar = {
-		Unit = {
-			Description = "Highly customizable Wayland bar for Sway and Wlroots based compositors";
-			PartOf = [ "graphical-session.target" ];
-			After = [ "graphical-session.target" ];
-		};
-		Service = {
-			ExecStart = "${pkgs.waybar}/bin/waybar";
-			Restart = "on-failure";
-		};
-		Install = {
-			WantedBy = [ "niri.service" ];
-		};
-	};
-
-	systemd.user.services.xwayland-satellite = {
-		Unit = {
-			Description = "Xwayland outside your Wayland";
-			PartOf = [ "graphical-session.target" ];
-			After = [ "graphical-session.target" ];
-		};
-		Service = {
-			ExecStart = "${pkgs.xwayland-satellite}/bin/xwayland-satellite";
-			Restart = "on-failure";
-		};
-		Install = {
-			WantedBy = [ "niri.service" ];
-		};
-	};
 }

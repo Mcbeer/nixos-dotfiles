@@ -67,6 +67,7 @@
     pkgs.wowup-cf
     xwayland-satellite
     nodejs_24
+    pkgs.opencode
   ];
 
   fonts.packages = with pkgs; [

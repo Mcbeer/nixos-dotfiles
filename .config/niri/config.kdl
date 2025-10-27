@@ -65,5 +65,5 @@ window-rule {
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww" "img" "/home/nicolai/Downloads/wallpaper.jpg"
+spawn-at-startup "swww" "img" "--resize" "fit" "/home/nicolai/Downloads/wallpaper.jpg"
 

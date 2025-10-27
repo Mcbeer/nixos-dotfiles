@@ -17,6 +17,11 @@ layout {
     center-focused-column "never"
 }
 
+hotkey-overlay {
+    skip-at-startup
+}
+
+
 binds {
     Mod+H { focus-column-left; }
     Mod+L { focus-column-right; }

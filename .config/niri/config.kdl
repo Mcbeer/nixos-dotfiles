@@ -14,7 +14,9 @@ input {
 
 layout {
     gaps 8
-    center-focused-column "never"
+    center-focused-column "always"
+    
+    default-column-width { proportion 0.5; }
 }
 
 hotkey-overlay {

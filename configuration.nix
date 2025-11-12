@@ -22,12 +22,12 @@
 	];
   };
 
-  services.getty.autologinUser = "nicolai";
-
-  programs.hyprland = {
-	enable = true;
-	xwayland.enable = true;
-  };
+  services.xserver.enable = true;
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "nicolai";
+  services.displayManager.defaultSession = "niri";
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.gdm.wayland = true;
 
   programs.niri.enable = true;
 
@@ -54,9 +54,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     kitty
-    waybar
     git
-    hyprpaper
     swww
     wofi
     lutris
@@ -69,6 +67,7 @@
     xwayland-satellite
     nodejs_24
     pkgs.opencode
+    pkgs.ftb-app
   ];
 
   fonts.packages = with pkgs; [

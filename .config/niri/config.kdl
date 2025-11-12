@@ -14,9 +14,16 @@ input {
 
 layout {
     gaps 8
-    center-focused-column "on-overflow"
+    center-focused-column "never"
+    always-center-single-column
+
     
     default-column-width { proportion 0.5; }
+
+    focus-ring {
+	active-gradient from="#f00f" to="#f05" angle=45 in="oklch longer hue"
+	width 2
+    }
 }
 
 hotkey-overlay {
@@ -57,6 +64,7 @@ binds {
     Mod+Space { spawn "wofi" "--show" "drun"; }
     Mod+Return { spawn "kitty"; }
     Mod+Shift+E { quit; }
+    Mod+Shift+W { spawn "sh" "-c" "killall waybar && waybar"; }
 }
 
 window-rule {

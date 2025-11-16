@@ -71,6 +71,7 @@
     waybar
     mako
     libnotify
+    ferdium
   ];
 
   fonts.packages = with pkgs; [

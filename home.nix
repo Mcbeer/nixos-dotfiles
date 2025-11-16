@@ -1,8 +1,6 @@
-{ config, pkgs, ags, astal, ... }:
+{ config, pkgs, ... }:
 
 {
-	imports = [ ags.homeManagerModules.default ];
-
 	home.username = "nicolai";
 	home.homeDirectory = "/home/nicolai";
 	home.stateVersion = "25.05";
@@ -16,17 +14,10 @@
 		};
 	};
 	
-	programs.ags = {
-		enable = true;
-		configDir = ./.config/ags;
-		extraPackages = with pkgs; [
-			# Add any extra Astal packages needed
-		];
-	};
-	
 	xdg.configFile = {
 		"niri".source = ./.config/niri;
 		"wofi".source = ./.config/wofi;
+		"waybar".source = ./.config/waybar;
 	};
 
 }

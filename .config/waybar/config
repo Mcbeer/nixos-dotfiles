@@ -1,0 +1,33 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 30,
+	"modules-left": ["niri/workspaces"],
+	"modules-center": ["clock"],
+	"modules-right": ["cpu", "memory", "temperature"],
+	
+	"niri/workspaces": {
+		"format": "{name}"
+	},
+	
+	"clock": {
+		"format": "{:%H:%M:%S}",
+		"format-alt": "{:%Y-%m-%d %H:%M:%S}",
+		"interval": 1
+	},
+	
+	"cpu": {
+		"format": "CPU {usage}%",
+		"interval": 2
+	},
+	
+	"memory": {
+		"format": "MEM {}%",
+		"interval": 2
+	},
+	
+	"temperature": {
+		"format": "{temperatureC}°C",
+		"interval": 2
+	}
+}

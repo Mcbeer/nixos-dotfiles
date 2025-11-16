@@ -1,0 +1,55 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: "CaskaydiaMono Nerd Font";
+	font-size: 13px;
+	min-height: 0;
+}
+
+window#waybar {
+	background: rgba(30, 30, 46, 0.9);
+	color: #cdd6f4;
+}
+
+#workspaces button {
+	padding: 0 10px;
+	color: #cdd6f4;
+	background: transparent;
+}
+
+#workspaces button.active {
+	background: #89b4fa;
+	color: #1e1e2e;
+}
+
+#workspaces button:hover {
+	background: #45475a;
+}
+
+#clock {
+	padding: 0 15px;
+	color: #cdd6f4;
+	font-weight: bold;
+}
+
+#cpu,
+#memory,
+#temperature {
+	padding: 0 10px;
+	margin: 0 5px;
+	background: #45475a;
+	color: #cdd6f4;
+	border-radius: 5px;
+}
+
+#cpu {
+	color: #89b4fa;
+}
+
+#memory {
+	color: #a6e3a1;
+}
+
+#temperature {
+	color: #f38ba8;
+}

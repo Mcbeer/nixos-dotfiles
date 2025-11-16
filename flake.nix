@@ -7,18 +7,9 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-		astal = {
-			url = "github:aylur/astal";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
-		ags = {
-			url = "github:aylur/ags";
-			inputs.nixpkgs.follows = "nixpkgs";
-			inputs.astal.follows = "astal";
-		};
 	};
 
-	outputs = { nixpkgs, home-manager, ags, astal, ... }: {
+	outputs = { nixpkgs, home-manager, ... }: {
 		nixosConfigurations.nicolai-linux = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = [
@@ -30,7 +21,6 @@
 						useUserPackages = true;
 						users.nicolai = import ./home.nix;
 						backupFileExtension = "backup";
-						extraSpecialArgs = { inherit ags astal; };
 					};
 				}
 			];

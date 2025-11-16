@@ -68,6 +68,7 @@
     nodejs_24
     pkgs.opencode
     pkgs.ftb-app
+    waybar
   ];
 
   fonts.packages = with pkgs; [

@@ -6,20 +6,35 @@
 	min-height: 0;
 }
 
+#workspaces {
+	padding: 0;
+	margin: 0;
+}
+
 window#waybar {
-	background: rgba(30, 30, 46, 0.9);
+	background: transparent;
 	color: #cdd6f4;
 }
 
 #workspaces button {
-	padding: 0 10px;
+	padding: 4px 10px;
+	margin: 5px 3px;
 	color: #cdd6f4;
-	background: transparent;
+	background: #45475a;
+	border-radius: 12px;
+	min-width: 20px;
+	min-height: 0;
+	transition: all 0.2s ease;
 }
 
 #workspaces button.active {
 	background: #89b4fa;
 	color: #1e1e2e;
+	padding: 4px 16px;
+	margin: 5px 3px;
+	min-width: 35px;
+	min-height: 0;
+	font-weight: bold;
 }
 
 #workspaces button:hover {
@@ -27,19 +42,24 @@ window#waybar {
 }
 
 #clock {
-	padding: 0 15px;
+	padding: 4px 15px;
+	margin: 5px 3px;
+	background: #45475a;
 	color: #cdd6f4;
+	border-radius: 12px;
+	min-height: 0;
 	font-weight: bold;
 }
 
 #cpu,
 #memory,
 #temperature {
-	padding: 0 10px;
-	margin: 0 5px;
+	padding: 4px 10px;
+	margin: 5px 3px;
 	background: #45475a;
 	color: #cdd6f4;
-	border-radius: 5px;
+	border-radius: 12px;
+	min-height: 0;
 }
 
 #cpu {

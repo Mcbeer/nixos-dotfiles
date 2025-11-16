@@ -64,7 +64,8 @@ binds {
     Mod+Space { spawn "wofi" "--show" "drun"; }
     Mod+Return { spawn "kitty"; }
     Mod+Shift+E { quit; }
-    Mod+Shift+W { spawn "sh" "-c" "killall waybar && waybar"; }
+    Mod+Shift+W { spawn "sh" "-c" "pkill waybar && waybar"; }
+    Mod+N { spawn "notify-send" "Test Notification" "Mako is working! 🔔"; }
 }
 
 window-rule {
@@ -72,6 +73,7 @@ window-rule {
     clip-to-geometry true
 }
 
+spawn-at-startup "mako"
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swww-daemon"

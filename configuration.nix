@@ -26,8 +26,8 @@
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "nicolai";
   services.displayManager.defaultSession = "niri";
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.gdm.wayland = true;
+  services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.wayland = true;
 
   programs.niri.enable = true;
 
@@ -69,6 +69,8 @@
     pkgs.opencode
     pkgs.ftb-app
     waybar
+    mako
+    libnotify
   ];
 
   fonts.packages = with pkgs; [
@@ -76,6 +78,14 @@
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 10d";
+  };
+
+  boot.loader.systemd-boot.configurationLimit = 10;
 
   system.stateVersion = "25.05";
 

@@ -18,6 +18,7 @@
 		"niri".source = ./.config/niri;
 		"wofi".source = ./.config/wofi;
 		"waybar".source = ./.config/waybar;
+		"mako".source = ./.config/mako;
 	};
 
 }

@@ -73,3 +73,12 @@ window#waybar {
 #temperature {
 	color: #f38ba8;
 }
+
+#bluetooth {
+	padding: 4px 10px;
+	margin: 5px 3px;
+	background: #45475a;
+	color: #89b4fa;
+	border-radius: 12px;
+	min-height: 0;
+}

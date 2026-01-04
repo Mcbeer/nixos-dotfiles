@@ -41,6 +41,10 @@
   security.polkit.enable = true;
   
   nixpkgs.config.allowUnfree = true;
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
+
   hardware.nvidia.open = false;
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia.modesetting.enable = true;
